@@ -1,0 +1,27 @@
+:root{
+    --negro-principal: #000000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--negro-principal);
+    z-index: 1000;
+}
