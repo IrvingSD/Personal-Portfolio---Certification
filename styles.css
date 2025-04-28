@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --negro-principal: #000000;
+    --negro-principal: #212121;
     --blanco-principal: white;
     --rosa-principal: #CF0F47;
     --rosa-secundario: #FF0B55;
@@ -21,7 +21,11 @@ html{
 }
 
 body{
-    font-family: 'Poppins',sans-serif;;
+    font-family: 'Poppins',sans-serif;
+    color: var(--blanco-principal);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.4;
 }
 
 .nav{
@@ -58,4 +62,58 @@ a{
 
 .nav-list a:hover{
     background-color: #CF0F47;
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-color:hsla(0,100%,50%,1);
+    background-image:
+    radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+    radial-gradient(at 75% 42%, hsla(340,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%); */
+    background-color:#d699ff;
+    background-image:
+    radial-gradient(at 71% 27%, hsla(221,96%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 33% 54%, hsla(139,83%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 99%, hsla(105,71%,62%,1) 0px, transparent 50%),
+    radial-gradient(at 59% 23%, hsla(215,72%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 81% 57%, hsla(316,93%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 84% 68%, hsla(7,71%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 27% 8%, hsla(245,63%,78%,1) 0px, transparent 50%);
+    background-size: 150% 150%;
+    animation: moverFondo 5s ease-in-out infinite alternate;
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+h1{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 6rem;
+}
+
+.bienvenida > p{
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
 }
