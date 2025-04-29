@@ -2,6 +2,7 @@
 
 :root{
     --negro-principal: #212121;
+    --negro-secundario: #4d4d4d;
     --blanco-principal: white;
     --rosa-principal: #CF0F47;
     --rosa-secundario: #FF0B55;
@@ -331,3 +332,10 @@ h2{
     transform: translateY(3px);
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--negro-secundario);
+    padding: 50px 200px;
+    font-weight: 300;
+}
