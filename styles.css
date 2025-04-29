@@ -169,3 +169,8 @@ h2{
     background-size: 150% 150%;
     animation: moverFondo 1s ease-in-out infinite alternate;
 }
+
+.proyectos-elemento{
+    display: flex;
+    
+}
