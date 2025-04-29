@@ -6,16 +6,16 @@
     --rosa-principal: #CF0F47;
     --rosa-secundario: #FF0B55;
     --rosa-terciario: #FFDEDE;
-
+    --gris-fondo: #F2F2F2;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
-    box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 10px;
 }
@@ -105,15 +105,67 @@ a{
     }
 }
 
-h1{
+h1,h2{
     font-weight: 700;
     font-family: 'Montserrat';
     text-align: center;
+}
+
+h1{
     font-size: 6rem;
 }
+
 
 .bienvenida > p{
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
+}
+
+.proyectos{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--gris-fondo);
+    display: flex;
+    justify-content: center;
+}
+
+.proyectos-grid{
+    width:70%;
+    height: 100%;
+    background-color: var(--blanco-principal);
+    margin-top: -100px;
+    box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.2);
+    padding: 100px;
+    
+}
+
+h2{
+    font-size: 4rem;
+    color: #212121;
+}
+
+.titulo-proyectos{
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.line{
+    background-color: #CF0F47;
+    width: 280px;
+    height: 3.5px;
+    margin-top: 20px;
+    background-color:#d699ff;
+    background-image:
+    radial-gradient(at 71% 27%, rgb(54, 0, 250) 0px, transparent 50%),
+    radial-gradient(at 33% 54%, rgb(11, 211, 74) 0px, transparent 50%),
+    radial-gradient(at 34% 99%, rgb(110, 230, 69) 0px, transparent 50%),
+    radial-gradient(at 59% 23%, rgb(69, 147, 255) 0px, transparent 50%),
+    radial-gradient(at 81% 57%, rgb(255, 25, 25) 0px, transparent 50%),
+    radial-gradient(at 84% 68%, rgb(255, 131, 114) 0px, transparent 50%),
+    radial-gradient(at 27% 8%, rgb(163, 157, 255) 0px, transparent 50%);
+    background-size: 150% 150%;
+    animation: moverFondo 1s ease-in-out infinite alternate;
 }
