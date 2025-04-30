@@ -339,3 +339,85 @@ footer{
     padding: 50px 200px;
     font-weight: 300;
 }
+
+@media (max-width: 1200px) {
+    body {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+
+    .bienvenida{
+        height: 90vh;
+    }
+
+    .bienvenida > p, .contacto >p{
+        font-size: 2.5rem;
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    h1{
+        font-size: 3rem;
+        padding: 0 60px;
+    }
+  
+    .nav-list {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .proyectos{
+        height: auto;
+    }
+  
+    .proyectos-grid {
+        padding: 0 40px;
+        height: 200vh;
+        margin-top: -70px;
+    }
+  
+    .grid {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+    .proyectos-elemento {
+        margin-top: 0; /* quita el espacio adicional innecesario */
+        width: 100%;     /* puedes jugar con esto para que quepan 3 por fila */
+        height: 20%;
+    }
+  
+    .imagen-p {
+      width: 100%;
+      height: auto;
+    }
+  
+    .vinculos-contacto svg {
+        height: 50px;  
+    }
+
+    footer{
+        padding: 30px;
+        gap: 30px;
+        font-size: 1.3rem;
+    }
+
+    .project-tile{
+        font-weight: 400;
+        margin-top: 80px;
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .line{
+        margin-bottom: 50px;
+    }
+
+
+  }
+  
